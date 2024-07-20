@@ -48,6 +48,7 @@
             "lastName": "Johnson",
             "email": "emily.johnson@example.com",
             "position": "Professor",
+            "collegeName": "Anna University",
             "department": "Computer Science"
         },
         {
@@ -56,6 +57,7 @@
             "lastName": "Brown",
             "email": "michael.brown@example.com",
             "position": "Administrator",
+            "collegeName": "Periyar University",
             "department": "Administration"
         },
         {
@@ -64,6 +66,7 @@
             "lastName": "Williams",
             "email": "sarah.williams@example.com",
             "position": "Lecturer",
+            "collegeName": "Annamalai University",
             "department": "Mathematics"
         },
         {
@@ -72,6 +75,7 @@
             "lastName": "Miller",
             "email": "david.miller@example.com",
             "position": "Counselor",
+            "collegeName": "Tech Valley University",
             "department": "Student Affairs"
         },
         {
@@ -80,6 +84,7 @@
             "lastName": "Wilson",
             "email": "laura.wilson@example.com",
             "position": "Research Assistant",
+            "collegeName": "Tech Valley University",
             "department": "Physics"
         }
     ]

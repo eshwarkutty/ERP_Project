@@ -18,7 +18,7 @@ const Dashboard = () => {
                 {isSidebarOpen && (
                     <div className="sidebar-menu">
                         <Link to="/students" className="sidebar-item">Students</Link>
-                        <Link to="/staff" className="sidebar-item">Staff</Link>
+                        <Link to="/staff" className="sidebar-item">Staffs</Link>
                     </div>
                 )}
             </div>
