@@ -1,21 +1,33 @@
+/* General Body Styles */
 body {
     margin: 0;
     padding: 0;
-    background: url(https://i.ibb.co/VQmtgjh/6845078.png) no-repeat;
-    height: 100vh;
     font-family: sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     overflow: hidden;
 }
 
+/* Login Page Specific Styles */
+body.login-page {
+    background: url(https://i.ibb.co/VQmtgjh/6845078.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Ensure other pages don't inherit login background styles */
+body:not(.login-page) {
+    background: none;
+}
+
+/* Media Queries for Responsive Background */
 @media screen and (max-width: 600px) {
-    body {
+    body.login-page {
         background-size: cover;
     }
 }
 
+/* Login Page Specific Styles */
 .login-container {
     height: 100%;
     display: flex;

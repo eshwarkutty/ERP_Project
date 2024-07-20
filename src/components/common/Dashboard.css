@@ -1,0 +1,77 @@
+/* Dashboard.css */
+.dashboard-container {
+    height: 100vh;
+    display: flex;
+    background-color: #f8f9fa; /* Light grey background for the whole dashboard */
+}
+
+.sidebar {
+    width: 60px; /* Width of the sidebar when closed */
+    background-color: #343a40; /* Dark background for sidebar */
+    color: white; /* White text color for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px; /* Padding inside the sidebar */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Slight shadow for depth */
+    transition: width 0.3s ease; /* Smooth transition for width change */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Ensure positioning for absolute elements */
+}
+
+.sidebar.open {
+    width: 200px; /* Width of the sidebar when open */
+}
+
+.menu-button {
+    background-color: #495057; /* Dark grey background for button */
+    color: white; /* White text color */
+    border: none;
+    padding: 10px;
+    font-size: 24px; /* Larger font size for hamburger menu icon */
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    width: 100%; /* Full width button */
+    text-align: center; /* Center the text */
+}
+
+.menu-button:hover {
+    background-color: #6c757d; /* Lighter grey on hover */
+}
+
+.sidebar-menu {
+    margin-top: 20px; /* Space above the menu items */
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width menu */
+}
+
+.sidebar-item {
+    color: white;
+    padding: 10px 15px; /* Spacing around links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Full width link */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.sidebar-item:hover {
+    background-color: #6c757d; /* Slightly lighter grey on hover */
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px; /* More padding for spacious content area */
+    background-color: white; /* White background for content area */
+    border-top-left-radius: 8px; /* Rounded corner on top left */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1); /* Slight shadow for depth */
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    color: #343a40; /* Dark grey color for headings */
+}
+
+.content p {
+    color: #6c757d; /* Medium grey color for text */
+}

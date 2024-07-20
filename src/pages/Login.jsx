@@ -1,14 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setAuthData } from '../redux/slices/authSlice';
 import axios from 'axios';
 import Swal from 'sweetalert2';
-import '../components/common/Login.css'; // Ensure you include this CSS file
+import '../components/common/Login.css'; 
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // Add the class when the component mounts
+        document.body.classList.add('login-page');
+
+        // Cleanup the class when the component unmounts
+        return () => {
+            document.body.classList.remove('login-page');
+        };
+    }, []);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -19,6 +31,7 @@ const Login = () => {
             });
             dispatch(setAuthData({ token: response.data.token, username }));
             Swal.fire('Success', 'Logged in successfully', 'success');
+            navigate('/dashboard');
         } catch (error) {
             Swal.fire('Error', 'Login failed', 'error');
         }
