@@ -13,10 +13,9 @@ const Login = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        
         document.body.classList.add('login-page');
 
-        s
+        // Removed the undefined variable 's'
         return () => {
             document.body.classList.remove('login-page');
         };
