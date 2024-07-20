@@ -15,7 +15,7 @@ const Login = () => {
     useEffect(() => {
         document.body.classList.add('login-page');
 
-        // Removed the undefined variable 's'
+        
         return () => {
             document.body.classList.remove('login-page');
         };
