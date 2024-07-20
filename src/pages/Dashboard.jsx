@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../components/common/Dashboard.css'; // Ensure you include this CSS file
+import '../components/common/Dashboard.css'; 
 
 const Dashboard = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -13,7 +13,7 @@ const Dashboard = () => {
         <div className="dashboard-container">
             <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
                 <button className="menu-button" onClick={toggleSidebar}>
-                    &#9776; {/* Unicode for the hamburger menu icon */}
+                    &#9776; 
                 </button>
                 {isSidebarOpen && (
                     <div className="sidebar-menu">

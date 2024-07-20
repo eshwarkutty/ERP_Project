@@ -13,10 +13,10 @@ const Login = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Add the class when the component mounts
+        
         document.body.classList.add('login-page');
 
-        // Cleanup the class when the component unmounts
+        s
         return () => {
             document.body.classList.remove('login-page');
         };
